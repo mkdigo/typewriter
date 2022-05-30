@@ -1,8 +1,82 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e1e1e1;
+  font-family: sans-serif;
+}
+
+.typewriter {
+  min-height: 300px;
+  padding: 1rem;
+
+  white-space: pre-wrap;
+  background: #333;
+  color: #fff;
+}
+
+.window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.window .container {
+  width: 100%;
+  max-width: 800px;
+  padding: 5px;
+  background: #ddd;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.window .container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.window .container header h1 {
+  padding: 0rem 1rem;
+}
+
+.window .container header .buttons {
+  display: flex;
+  padding: 0rem 0.5rem;
+  gap: 10px;
+}
+
+.window .container header .buttons span {
+  display: block;
+  
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#console {
+  font-family: 'VT323', monospace;
+  font-size: 1.4rem;
+}
+
+.red {
+  background: #d20;
+}
+
+.yellow {
+  background: #db0;
+}
+
+.green {
+  background: #5b0;
 }
